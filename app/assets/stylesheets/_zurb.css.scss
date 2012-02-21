@@ -24,3 +24,45 @@ hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 12px 0 18px
 	table tbody tr:nth-child(even) { background: #f9f9f9; }
 	table tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border: none; }
 	
+.action.newbutton input:active {
+  -webkit-box-shadow: rgba(34,73,133,0.7) 0 1px 2px inset;
+  -moz-box-shadow: rgba(34,73,133,0.7) 0 1px 2px inset;
+  box-shadow: rgba(34,73,133,0.7) 0 1px 2px inset;
+}
+  
+.action.newbutton input:hover {
+  background: linear-gradient(rgba(47, 101, 185, 0.7),rgba(37, 79, 145, 0.7));
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(47, 101, 185, 0.7)), color-stop(100%, rgba(37, 79, 145, 0.7)));
+  background: -webkit-linear-gradient(rgba(47, 101, 185, 0.7),rgba(37, 79, 145, 0.7));
+  background: -moz-linear-gradient(rgba(47, 101, 185, 0.7),rgba(37, 79, 145, 0.7));
+  background: -o-linear-gradient(rgba(47, 101, 185, 0.7),rgba(37, 79, 145, 0.7));
+  background: -ms-linear-gradient(rgba(47, 101, 185, 0.7),rgba(37, 79, 145, 0.7));
+  background: linear-gradient(rgba(47, 101, 185, 0.7),rgba(37, 79, 145, 0.7));
+}
+  
+.action.newbutton input {
+  font-size: 19px;
+  padding: 0.3em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.5;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background: linear-gradient(rgba(54, 113, 204, 0.7),rgba(42, 90, 165, 0.7));
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(54, 113, 204, 0.7)), color-stop(100%, rgba(42, 90, 165, 0.7)));
+  background: -webkit-linear-gradient(rgba(54, 113, 204, 0.7),rgba(42, 90, 165, 0.7));
+  background: -moz-linear-gradient(rgba(54, 113, 204, 0.7),rgba(42, 90, 165, 0.7));
+  background: -o-linear-gradient(rgba(54, 113, 204, 0.7),rgba(42, 90, 165, 0.7));
+  background: -ms-linear-gradient(rgba(54, 113, 204, 0.7),rgba(42, 90, 165, 0.7));
+  background: linear-gradient(rgba(54, 113, 204, 0.7),rgba(42, 90, 165, 0.7));
+  -webkit-box-shadow: rgba(115,156,219,0.7) 0 1px 0 inset;
+  -moz-box-shadow: rgba(115,156,219,0.7) 0 1px 0 inset;
+  box-shadow: rgba(115,156,219,0.7) 0 1px 0 inset;
+  border: 1px solid rgba(37, 79, 145, 0.7);
+  color: white;
+  text-shadow: rgba(25, 55, 100, 0.7) 0 -1px 0;
+}

@@ -20,7 +20,7 @@
 *
 */
 @import "compass/css3";
-@import "sassybuttons";
+
 
 //
 // Important numbers
@@ -104,7 +104,7 @@ input, textarea, button, select {
 }
 
 .action.newbutton input {
-  @include sassy-button("simple", 10px, 19px, rgba(54,113,204, 0.7));
+  
 }
 select {
   @include box-shadow(rgba(gray, 0.5) 0 0 10px);
