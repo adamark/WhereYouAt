@@ -1,3 +1,7 @@
+# THIS WOULD GO INTO INITIALIZERS AS ANY NAME
+
+# select_hour Time.now, :twelve_hour => true, :offset => 6, :prompt => "--", :midnight => true, :noon => "high noon"
+
 module DateTimeSelectorExtensions
   def self.included(base)
     base.send(:include, InstanceMethods)
