@@ -2,6 +2,7 @@ WhereYouAt::Application.routes.draw do
   
   get "/login" => 'users#new', :as => :login
   get "/logout" => 'application#logout', :as => :logout
+  
   resources :users
   
   root :to => 'users#edit'
