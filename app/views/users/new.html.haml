@@ -1,0 +1,12 @@
+%h1 Where you at?
+#twoway
+  = form_for(@user) do |f|
+    = render 'error_messages', :object => f.object
+    #input
+      .field.atsymbol
+        @#{f.text_field :name, :placeholder => "handle", :size => "25"}
+      .field
+        = f.hidden_field(:profile_pic, :value => "adamwmark")
+    #submit_button
+      .action.newbutton
+        = f.submit "Go"

@@ -1,0 +1,30 @@
+%h1
+  #{first_name}, where you at?
+  / = select_hour Time.now, :twelve_hour => true, :offset => 6, :prompt => "--", :midnight => true, :noon => "high noon"
+#twoway
+  = form_for(@user) do |f|
+    / = current_user.inspect
+    .wrapper
+      
+      #submit_button
+        .action
+          = f.submit "Academy", :type => :image, :src => "/assets/hancock.png"
+      #input
+        .field
+          = f.label :status
+          = am_pm_hour_select f, :status, start:5.5
+        .field
+          = f.hidden_field(:location, :value => "Academy")
+          
+  = form_for(@user) do |f|
+    .wrapper
+      
+      #submit_button
+        .action
+          = f.submit "Cloud", :type => :image, :src => "/assets/clouds.png"
+      #input
+        .field
+          = f.label :status
+          = am_pm_hour_select f, :status, start:5.5
+        .field
+          = f.hidden_field(:location, :value => "Cloud")

@@ -1,0 +1,7 @@
+= form_for(@user) do |f|
+  #input
+    .field
+      = f.hidden_field(:status, :value => "help")
+  #submit_button
+    .action
+      = f.submit "I need an adult"
