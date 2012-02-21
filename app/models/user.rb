@@ -1,7 +1,11 @@
 class User < ActiveRecord::Base
 
-  before_create { |user| user.profile_pic = twit_pic(user.name) }
-  before_create { |user| user.name = twit_name(user.name) }
+  before_create do |user| 
+    user.profile_pic = twit_pic(user.name)
+    user.full_name = twit_name(user.name)
+    # user.save
+  end
+  
   before_update do |user|
     if user.status == "5.5"
       user.updated_at = Time.now

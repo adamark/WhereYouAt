@@ -3,7 +3,6 @@ class UsersController < ApplicationController
   
   def new
     @user = User.new
-    # @already_user = User.find(params[:id])
   end
   
   def edit
@@ -14,25 +13,16 @@ class UsersController < ApplicationController
     @users = User.all
     
     @user = current_user
-    # @user = User.find(params[:id])
     
     @academy = User.where(:location => "Academy")
-    @cloud = User.where(:location => "Cloud")
-    
+    @cloud = User.where(:location => "Cloud")    
   end
   
   def create
-    @user = User.new(params[:user])
-    # already_user = User.find(params[:name])
-    
-    if @user.valid?
-      @user.save
+    # @user = User.new(params[:user])
+    @user = User.find_or_create_by_name(params[:user])
       cookies.permanent[:user_id] = @user.id
-      redirect_to root_url
-    else
-      redirect_to login_url
-      flash.now[:error] = "We already have you in the db!"
-    end
+      redirect_to root_url    
   end
   
   def update

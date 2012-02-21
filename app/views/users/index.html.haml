@@ -10,7 +10,7 @@
             %tr
               %td
                 .handle-image= image_tag( user.profile_pic )
-                %span.handle= user.name
+                %span.handle= user.full_name
                 - if user.status == "help"
                   %span I need help!
       %hr
@@ -22,7 +22,7 @@
             %tr
               %td
                 .handle-image= image_tag( user.profile_pic )
-                %span.handle= user.name
+                %span.handle= user.full_name
                 %span.other Be there in #{distance_of_time_in_words(Time.now, user.updated_at)}
                 / - if current_user?
                 /   = button_to "I'm Here!", { :action => "update", :id => @user.status }
@@ -36,7 +36,7 @@
             %tr
               %td
                 .handle-image= image_tag( user.profile_pic )
-                %span.handle= user.name
+                %span.handle= user.full_name
       %hr
       %h3 En Route
       %hr
@@ -46,7 +46,7 @@
             %tr
               %td
                 .handle-image= image_tag( user.profile_pic )
-                %span.handle= user.name
+                %span.handle= user.full_name
                 %span.other Be there in #{distance_of_time_in_words(Time.now, user.updated_at)}
                 / - if current_user?
                 /   = button_to "I'm Here!", { :action => "update", :id => @user.id }

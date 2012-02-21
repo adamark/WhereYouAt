@@ -1,9 +1,7 @@
 %h1
   #{first_name}, where you at?
-  / = select_hour Time.now, :twelve_hour => true, :offset => 6, :prompt => "--", :midnight => true, :noon => "high noon"
 #twoway
   = form_for(@user) do |f|
-    / = current_user.inspect
     .wrapper
       
       #submit_button
