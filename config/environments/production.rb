@@ -66,6 +66,6 @@ WhereYouAt::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   
   #Configure SASS
-  config.sass.line_comments = false
-  config.sass.style = :nested
+  # config.sass.line_comments = false
+  # config.sass.style = :nested
 end
