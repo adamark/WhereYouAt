@@ -34,4 +34,8 @@ WhereYouAt::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+  
+  #Configure SASS
+  config.sass.line_comments = false
+  config.sass.style = :nested
 end

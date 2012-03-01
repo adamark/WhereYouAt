@@ -34,4 +34,8 @@ WhereYouAt::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  #Configure SASS
+  config.sass.line_comments = false
+  config.sass.style = :nested
 end
