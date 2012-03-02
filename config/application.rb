@@ -50,7 +50,7 @@ module WhereYouAt
     # parameters by using an attr_accessible or attr_protected declaration.
     # config.active_record.whitelist_attributes = true
     # config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
-        config.assets.precompile = true
+        config.assets.precompile = false
 
     # Enable the asset pipeline
     config.assets.enabled = true
